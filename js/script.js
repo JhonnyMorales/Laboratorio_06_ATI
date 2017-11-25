@@ -27,9 +27,6 @@ function mostrar_ocultar(valor, elemento_DOM) {
 		if (e == valor) {
 			element.style.display='block';
 			element.childNodes[3].style.display= 'block';
-		} else {
-			element.style.display='none';
-			element.childNodes[3].style.display= 'none';
 		}
 	} 
 }
@@ -42,20 +39,6 @@ function mostrar_todos(elemento_DOM) {
 		element = elementos[e];
 		element.style.display='block';
 		element.childNodes[3].style.display= 'none';
-	}
-	function section_one() {
-		document.getElementById('section_one').style.display = 'block';
-		document.getElementById('section_two').style.display = 'none';
-		document.getElementById('section_three').style.display = 'none';
-		document.getElementById('section_four').style.display = 'none';
-		document.getElementById('section_five').style.display = 'none';
-	}
-	function section_two() {
-		document.getElementById('section_two').style.display = 'block';
-		document.getElementById('section_one').style.display = 'none';
-		document.getElementById('section_three').style.display = 'none';
-		document.getElementById('section_four').style.display = 'none';
-		document.getElementById('section_five').style.display = 'none';
 	}
 	function section_three() {
 		document.getElementById('section_three').style.display = 'block';
@@ -77,5 +60,19 @@ function mostrar_todos(elemento_DOM) {
 		document.getElementById('section_two').style.display = 'none';
 		document.getElementById('section_three').style.display = 'none';
 		document.getElementById('section_four').style.display = 'none';
+	}
+	function section_one() {
+		document.getElementById('section_one').style.display = 'block';
+		document.getElementById('section_two').style.display = 'none';
+		document.getElementById('section_three').style.display = 'none';
+		document.getElementById('section_four').style.display = 'none';
+		document.getElementById('section_five').style.display = 'none';
+	}
+	function section_two() {
+		document.getElementById('section_two').style.display = 'block';
+		document.getElementById('section_one').style.display = 'none';
+		document.getElementById('section_three').style.display = 'none';
+		document.getElementById('section_four').style.display = 'none';
+		document.getElementById('section_five').style.display = 'none';
 	}
 }
