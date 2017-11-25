@@ -5,13 +5,25 @@
 		<meta charset="UTF-8"> 
 		<title>Guía JavaScript</title>
 	</head>
+
 	<body>
 		<h1> Guía JavaScript + JSON + Inspector </h1>
 		<p> Esta es una guía para facilitar el conocimiento acerca del lenguaje de JavaScript y cómo podemos utilizar JSON y mapearlo de forma nativa con la instrucción JSON.parse, finalmente se detallará el uso del inspector y todas sus funcionalidades.</p>
 		<br>
 
 		<section id="section_one">
-						<div class="div_seccion">
+			<ul id="lista" name="lista" class="lista"> Sintáxis Básica: 
+				<div class="div_seccion">
+					<li><a href="#" onclick="mostrar_ocultar(0, this);">Declaración de Variables </a></li>
+					<img class="imagen_seccion" src="img/declaracion.png" alt="declaracion" hidden>
+				</div>
+				
+				<div class="div_seccion">
+					<li><a href="#" onclick="mostrar_ocultar(1, this);">Declaración de funciones (generales) </a></li>
+					<img class="imagen_seccion" src="img/funcion_general.png" alt="funcion_general" hidden>
+				</div>
+				
+				<div class="div_seccion">
 					<li><a href="#" onclick="mostrar_ocultar(2, this);">Función recursiva </a></li>
 					<img class="imagen_seccion" src="img/funcion_recursiva.png" alt="funcion_recursiva" hidden>
 				</div>
@@ -26,19 +38,15 @@
 					<img class="imagen_seccion" src="img/objeto_literal.png" alt="objeto_literal" hidden>
 				</div>
 				
-
-			<ul id="lista" name="lista" class="lista"> Sintáxis Básica: 
 				<div class="div_seccion">
-					<li><a href="#" onclick="mostrar_ocultar(0, this);">Declaración de Variables </a></li>
-					<img class="imagen_seccion" src="img/declaracion.png" alt="declaracion" hidden>
+					<li><a href="#" onclick="mostrar_ocultar(5, this);">Objeto (forma dinámica) </a></li>
+					<img class="imagen_seccion" src="img/objeto_dinamico.png" alt="objeto_dinamico" hidden>
 				</div>
 				
 				<div class="div_seccion">
-					<li><a href="#" onclick="mostrar_ocultar(1, this);">Declaración de funciones (generales) </a></li>
-					<img class="imagen_seccion" src="img/funcion_general.png" alt="funcion_general" hidden>
+					<li><a href="#" onclick="mostrar_ocultar(6, this);">Herencia (prototipo) </a></li>
+					<img class="imagen_seccion" src="img/herencia.png" alt="herencia" hidden>
 				</div>
-				
-				
 			</ul>
 			<button class="boton" id="sintaxis_javascript" type="button" onclick="mostrar_todos(this);">Atrás</button>
 			<button class="boton" id="dom_javascript" type="button">Métodos DOM y JavaScript</button>
@@ -148,5 +156,7 @@
 			<button class="boton" id="operar_json" type="button">Operaciones de JSON con JavaScript</button>
 		</section>
 		<br>
+		
+		<script type="text/javascript" src="js/script.js">	</script>
 	</body>
 </html>
